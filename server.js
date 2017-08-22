@@ -28,6 +28,7 @@ function showtemplete (data) {
     var nameme = data.nameme;
     var postme = data.postme;
     var title = data.title;
+    var content = data.content;
     var templete = `
         <html>
             <head>
