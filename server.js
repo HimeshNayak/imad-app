@@ -17,7 +17,7 @@ app.get('/ui/madi.png', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'madi.png'));
 });
 
-var ContentofPages = {
+var ContentOfPages = {
     'page1' : {
         title: "Page 1 | Himesh Nayak",
         nameme: "Himesh Nayak",
