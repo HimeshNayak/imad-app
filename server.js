@@ -65,7 +65,7 @@ function showtemplete (data) {
 }
 
 app.get('/:PageName', function (req, res) {
-    var PageName = res.params.PageName;
+    var PageName = req.params.PageName;
   res.send(showtemplete(ContentOfPages[PageName]));
 });
 
