@@ -17,9 +17,44 @@ app.get('/ui/madi.png', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'madi.png'));
 });
 
+var page1Content = {
+    title: "Page 1 | Himesh Nayak";
+    nameme: "Himesh Nayak";
+    postme: "Student";
+    content: "Contents are here";
+};
+
+function showtemplete (data) {
+    var nameme = data.nameme;
+    var postme = data.postme;
+    var title = data.title;
+    var templete = "
+        <html>
+            <head>
+                <title>${title}</title>
+                <meta view = "viewport" content = "with=content-width, initial-scale = 1" >
+            </head>
+            <body>
+            <div>
+                <h1>Hi, this page one</h1>
+                <div class = "content">
+                    Name : ${nameme}<br>
+                    Post: ${postme}<br>
+                    ${content}
+                </div>
+            </div>
+            </body> 
+        </html>
+    ";
+    return showTemplete;
+};
+
 app.get('/page1', function (req, res) {
-  res.sendFile(path.join(__dirname, 'page1_contents.html'));
+  res.send(showTemplete(page1Content));
 });
+
+
+
 
 // Do not change port, otherwise your app won't run on IMAD servers
 // Use 8080 only for local development if you already have apache running on 80
