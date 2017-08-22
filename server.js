@@ -17,14 +17,25 @@ app.get('/ui/madi.png', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'madi.png'));
 });
 
-var page1Content = {
-    title: "Page 1 | Himesh Nayak",
-    nameme: "Himesh Nayak",
-    postme: "Student",
-    content: 
-        `
-            Contents are here.Contents are hereContents are hereContents are hereContents are hereContents are hereContents are hereContents are hereContents are hereContents are hereContents are hereContents are hereContents are hereContents are hereContents are hereContents are hereContents are hereContents are hereContents are hereContents are hereContents are hereContents are hereContents are hereContents are hereContents are hereContents are hereContents are hereContents are hereContents are hereContents are hereContents are hereContents are hereContents are hereContents are hereContents are hereContents are here.
-        `
+var ContentofPages = {
+    page1 : {
+        title: "Page 1 | Himesh Nayak",
+        nameme: "Himesh Nayak",
+        postme: "Student",
+        content: 
+            `
+                Contents are here.Contents are hereContents are hereContents are hereContents are hereContents are hereContents are hereContents are hereContents are hereContents are hereContents are hereContents are hereContents are hereContents are hereContents are hereContents are hereContents are hereContents are hereContents are hereContents are hereContents are hereContents are hereContents are hereContents are hereContents are hereContents are hereContents are hereContents are hereContents are hereContents are hereContents are hereContents are hereContents are hereContents are hereContents are hereContents are here.        `
+        },
+       
+    page2 : { 
+        title: "Page 2 | Himesh Nayak",
+        nameme: "Himesh Nayak",
+        postme: "Student",
+        content: 
+            `
+            Contents  for page 2 are here. Contents  for page 2 are here. Contents  for page 2 are here. Contents  for page 2 are hereContents  for page 2 are here. Contents  for page 2 are here. Contents  for page 2 are here. Contents  for page 2 are here. Contents  for page 2 are here. Contents  for page 2 are here. Contents  for page 2 are here. Contents  for page 2 are here.
+            `
+        },
 };
 
 function showtemplete (data) {
@@ -53,8 +64,9 @@ function showtemplete (data) {
     return templete;
 }
 
-app.get('/page1', function (req, res) {
-  res.send(showtemplete(page1Content));
+app.get('/:ContentOfPages', function (req, res) {
+    var PageName = res.params.PageName;
+  res.send(showtemplete(ContentOfPages[PageName]));
 });
 
 
