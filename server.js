@@ -21,7 +21,10 @@ var page1Content = {
     title: "Page 1 | Himesh Nayak",
     nameme: "Himesh Nayak",
     postme: "Student",
-    content: "Contents are here"
+    content: 
+        `
+            Contents are here.Contents are hereContents are hereContents are hereContents are hereContents are hereContents are hereContents are hereContents are hereContents are hereContents are hereContents are hereContents are hereContents are hereContents are hereContents are hereContents are hereContents are hereContents are hereContents are hereContents are hereContents are hereContents are hereContents are hereContents are hereContents are hereContents are hereContents are hereContents are hereContents are hereContents are hereContents are hereContents are hereContents are hereContents are hereContents are here.
+        `
 };
 
 function showtemplete (data) {
