@@ -46,7 +46,7 @@ function showtemplete (data) {
             </body> 
         </html>
     `;
-    return showTemplete;
+    return templete;
 }
 
 app.get('/page1', function (req, res) {
