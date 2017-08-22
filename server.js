@@ -51,7 +51,7 @@ function showtemplete (data) {
 }
 
 app.get('/page1', function (req, res) {
-  res.send(showTemplete(page1Content));
+  res.send(showtemplete(page1Content));
 });
 
 
