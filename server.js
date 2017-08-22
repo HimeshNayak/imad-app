@@ -18,7 +18,7 @@ app.get('/ui/madi.png', function (req, res) {
 });
 
 var ContentofPages = {
-    page1 : {
+    'page1' : {
         title: "Page 1 | Himesh Nayak",
         nameme: "Himesh Nayak",
         postme: "Student",
@@ -27,7 +27,7 @@ var ContentofPages = {
                 Contents are here.Contents are hereContents are hereContents are hereContents are hereContents are hereContents are hereContents are hereContents are hereContents are hereContents are hereContents are hereContents are hereContents are hereContents are hereContents are hereContents are hereContents are hereContents are hereContents are hereContents are hereContents are hereContents are hereContents are hereContents are hereContents are hereContents are hereContents are hereContents are hereContents are hereContents are hereContents are hereContents are hereContents are hereContents are hereContents are here.        `
         },
        
-    page2 : { 
+    'page2' : { 
         title: "Page 2 | Himesh Nayak",
         nameme: "Himesh Nayak",
         postme: "Student",
