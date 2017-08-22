@@ -64,7 +64,7 @@ function showtemplete (data) {
     return templete;
 }
 
-app.get('/:ContentOfPages', function (req, res) {
+app.get('/:PageName', function (req, res) {
     var PageName = res.params.PageName;
   res.send(showtemplete(ContentOfPages[PageName]));
 });
