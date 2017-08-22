@@ -18,17 +18,17 @@ app.get('/ui/madi.png', function (req, res) {
 });
 
 var page1Content = {
-    title: "Page 1 | Himesh Nayak";
-    nameme: "Himesh Nayak";
-    postme: "Student";
-    content: "Contents are here";
+    title: "Page 1 | Himesh Nayak",
+    nameme: "Himesh Nayak",
+    postme: "Student",
+    content: "Contents are here"
 };
 
 function showtemplete (data) {
     var nameme = data.nameme;
     var postme = data.postme;
     var title = data.title;
-    var templete = "
+    var templete = `
         <html>
             <head>
                 <title>${title}</title>
@@ -45,9 +45,9 @@ function showtemplete (data) {
             </div>
             </body> 
         </html>
-    ";
+    `;
     return showTemplete;
-};
+}
 
 app.get('/page1', function (req, res) {
   res.send(showTemplete(page1Content));
