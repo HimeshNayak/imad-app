@@ -2,7 +2,7 @@ console.log('Loaded!');
 
 // move madi
 var moveLeft = 0;
-var img = getElementById('madi'); 
+var img = document.getElementById('madi'); 
 img.onclick('moveMadi');
 function moveMadi() {
     moveLeft += 10;
