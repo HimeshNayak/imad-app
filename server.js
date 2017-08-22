@@ -36,7 +36,7 @@ function showtemplete (data) {
         <html>
             <head>
                 <title>${title}</title>
-                <meta view = "viewport" content = "with=content-width, initial-scale = 1" >
+               
             </head>
             <body>
             <div>
